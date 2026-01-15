@@ -1,0 +1,10 @@
+# Ads.txt for GameHub Pro - HTML5 Games Collection
+# For HTMLGames.com
+google.com, pub-8576558005934773, DIRECT, f08c47fec0942fa0
+google.com, pub-2406999148889794, DIRECT, f08c47fec0942fa0
+
+# For GameDistribution.com
+google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0
+
+# Note: This is a sample ads.txt file
+# Replace with actual ads.txt entries from your ad networks

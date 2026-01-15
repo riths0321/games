@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub Pro - Ultimate HTML5 Games Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>GameHub Pro</span>
+            </div>
+            <div class="nav-links">
+                <a href="#htmlgames"><i class="fab fa-html5"></i> HTMLGames</a>
+                <a href="#onlinegames"><i class="fas fa-globe"></i> OnlineGames</a>
+                <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+                <a href="https://github.com/riths0321/Game" target="_blank" class="github-btn">
+                    <i class="fab fa-github"></i> Source
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1><span class="hero-icon">🎮</span> Ultimate Games Collection</h1>
+            <p class="subtitle">Play 6+ HTML5 Games from Multiple Sources. No Downloads Required!</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <i class="fas fa-gamepad"></i>
+                    <div>
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">Games</span>
+                    </div>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-database"></i>
+                    <div>
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Sources</span>
+                    </div>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-mobile-alt"></i>
+                    <div>
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Responsive</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#htmlgames" class="cta-button">
+                <i class="fas fa-play"></i> Start Playing Now
+            </a>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- HTMLGames.com Section -->
+    <main class="container" id="htmlgames">
+        <div class="section-title">
+            <h2><i class="fab fa-html5"></i> HTMLGames.com Collection</h2>
+            <p>Premium games with direct embed support</p>
+            <div class="section-badge">
+                <i class="fas fa-check-circle"></i> Easy Integration
+            </div>
+        </div>
+
+        <div class="games-grid">
+            <!-- Game 1: Daily Path -->
+            <div class="game-card">
+                <div class="game-header" style="background: linear-gradient(135deg, #FF6B6B, #FF8E53);">
+                    <div class="game-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="game-info">
+                        <h3>Daily Path</h3>
+                        <span class="game-category">Puzzle Game</span>
+                    </div>
+                    <div class="game-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.5</span>
+                    </div>
+                </div>
+                <div class="game-embed">
+                    <script src="https://cdn.htmlgames.com/embed.js?game=DailyPath&amp;bgcolor=white"></script>
+                </div>
+                <div class="game-footer">
+                    <div class="source-badge">
+                        <i class="fas fa-code"></i> HTMLGames.com
+                    </div>
+                    <div class="game-meta">
+                        <span><i class="far fa-clock"></i> 5-10 min</span>
+                        <button class="fullscreen-btn" onclick="openFullscreen('https://cdn.htmlgames.com/DailyPath/')">
+                            <i class="fas fa-expand"></i> Fullscreen
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game 2: Mahjong Solitaire -->
+            <div class="game-card">
+                <div class="game-header" style="background: linear-gradient(135deg, #4ECDC4, #44A08D);">
+                    <div class="game-icon">
+                        <i class="fas fa-tiles"></i>
+                    </div>
+                    <div class="game-info">
+                        <h3>Mahjong Solitaire</h3>
+                        <span class="game-category">Strategy</span>
+                    </div>
+                    <div class="game-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.7</span>
+                    </div>
+                </div>
+                <div class="game-embed">
+                    <script src="https://cdn.htmlgames.com/embed.js?game=MahjongSolitaire&amp;bgcolor=white"></script>
+                </div>
+                <div class="game-footer">
+                    <div class="source-badge">
+                        <i class="fas fa-code"></i> HTMLGames.com
+                    </div>
+                    <div class="game-meta">
+                        <span><i class="far fa-clock"></i> 10-15 min</span>
+                        <button class="fullscreen-btn" onclick="openFullscreen('https://cdn.htmlgames.com/MahjongSolitaire/')">
+                            <i class="fas fa-expand"></i> Fullscreen
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- OnlineGames.io Section -->
+    <section class="container" id="onlinegames">
+        <div class="section-title">
+            <h2><i class="fas fa-globe"></i> OnlineGames.io Collection</h2>
+            <p>Popular casual games via iframe integration</p>
+            <div class="section-badge">
+                <i class="fas fa-layer-group"></i> Iframe Based
+            </div>
+        </div>
+
+        <div class="games-grid">
+            <!-- Game 3: 2048 -->
+            <div class="game-card">
+                <div class="game-header" style="background: linear-gradient(135deg, #9D50BB, #6E48AA);">
+                    <div class="game-icon">
+                        <i class="fas fa-superscript"></i>
+                    </div>
+                    <div class="game-info">
+                        <h3>2048 Number Game</h3>
+                        <span class="game-category">Brain Puzzle</span>
+                    </div>
+                    <div class="game-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.8</span>
+                    </div>
+                </div>
+                <div class="game-embed">
+                    <iframe 
+                        src="https://html5.gamedistribution.com/7b5a23ec82874487868deee0b7afbbfa/?gd_sdk_referrer_url=https://www.onlinegames.io/hill-racing-egg-drop!/" 
+                        width="100%" 
+                        height="450"
+                        scrolling="no"
+                        style="border: none; border-radius: 8px;"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="game-footer">
+                    <div class="source-badge">
+                        <i class="fas fa-globe"></i> OnlineGames.io
+                    </div>
+                    <div class="game-meta">
+                        <span><i class="fas fa-brain"></i> Thinking</span>
+                        <button class="fullscreen-btn" onclick="openGameFullscreen(this)">
+                            <i class="fas fa-expand"></i> Fullscreen
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game 4: Snake Game -->
+            <div class="game-card">
+                <div class="game-header" style="background: linear-gradient(135deg, #FFD89B, #19547B);">
+                    <div class="game-icon">
+                        <i class="fas fa-snake"></i>
+                    </div>
+                    <div class="game-info">
+                        <h3>Classic Snake</h3>
+                        <span class="game-category">Arcade</span>
+                    </div>
+                    <div class="game-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.6</span>
+                    </div>
+                </div>
+                <div class="game-embed">
+                    <iframe 
+                        src="https://cloud.onlinegames.io/games/2026/unity/99-nights-in-the-forest-survival/game.html"
+                        width="100%" 
+                        height="450"
+                        scrolling="no"
+                        style="border: none; border-radius: 8px;"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="game-footer">
+                    <div class="source-badge">
+                        <i class="fas fa-globe"></i> OnlineGames.io
+                    </div>
+                    <div class="game-meta">
+                        <span><i class="fas fa-arcade"></i> Retro</span>
+                        <button class="fullscreen-btn" onclick="openGameFullscreen(this)">
+                            <i class="fas fa-expand"></i> Fullscreen
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game 5: Bubble Shooter -->
+            <div class="game-card">
+                <div class="game-header" style="background: linear-gradient(135deg, #FF5F6D, #FFC371);">
+                    <div class="game-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="game-info">
+                        <h3>Bubble Shooter</h3>
+                        <span class="game-category">Action</span>
+                    </div>
+                    <div class="game-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.4</span>
+                    </div>
+                </div>
+                <div class="game-embed">
+                    <iframe 
+                       src="//html5.gamedistribution.com/rvvASMiM/63db3ede64e343c8a9fb4f91e29b7b08/index.html?gd_sdk_referrer_url=https%3A%2F%2Fwww.onlinegames.io%2Ffly-and-shoot-1.-italian-bosses&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5vbmxpbmVnYW1lcy5pby9mbHktYW5kLXNob290LTEuLWl0YWxpYW4tYm9zc2VzIiwicGFyZW50RG9tYWluIjoib25saW5lZ2FtZXMuaW8iLCJ0b3BEb21haW4iOiJvbmxpbmVnYW1lcy5pbyIsImhhc0ltcHJlc3Npb24iOnRydWUsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuMTgifQ%253D%253D "
+                        width="100%" 
+                        height="450"
+                        scrolling="no"
+                        style="border: none; border-radius: 8px;"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="game-footer">
+                    <div class="source-badge">
+                        <i class="fas fa-globe"></i> OnlineGames.io
+                    </div>
+                    <div class="game-meta">
+                        <span><i class="fas fa-crosshairs"></i> Aiming</span>
+                        <button class="fullscreen-btn" onclick="openGameFullscreen(this)">
+                            <i class="fas fa-expand"></i> Fullscreen
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-info-circle"></i> About GameHub Pro</h2>
+                <p>A multi-source HTML5 games aggregation platform</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Multiple Sources</h3>
+                    <p>Integrated games from 3 different platforms using various embedding techniques.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Fully Responsive</h3>
+                    <p>Optimized for all devices - desktop, tablet, and mobile with touch controls.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Performance</h3>
+                    <p>Games load instantly with optimized iframes and scripts for smooth gameplay.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safe Gaming</h3>
+                    <p>All games are from trusted sources with no malware or harmful content.</p>
+                </div>
+            </div>
+            
+            <div class="tech-stack">
+                <h3><i class="fas fa-cogs"></i> Technologies Used</h3>
+                <div class="tech-icons">
+                    <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                    <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span class="tech-tag"><i class="fab fa-js-square"></i> JavaScript</span>
+                    <span class="tech-tag"><i class="fas fa-tablet-alt"></i> Responsive</span>
+                    <span class="tech-tag"><i class="fas fa-paint-brush"></i> CSS Grid</span>
+                    <span class="tech-tag"><i class="fas fa-bolt"></i> FontAwesome</span>
+                </div>
+            </div>
+
+            <div class="source-info">
+                <h4><i class="fas fa-external-link-alt"></i> Game Sources</h4>
+                <div class="source-links">
+                    <a href="https://www.htmlgames.com" target="_blank" class="source-link">
+                        <i class="fab fa-html5"></i> HTMLGames.com
+                    </a>
+                    <a href="https://www.onlinegames.io" target="_blank" class="source-link">
+                        <i class="fas fa-globe"></i> OnlineGames.io
+                    </a>
+                    <a href="https://gamedistribution.com" target="_blank" class="source-link">
+                        <i class="fas fa-gamepad"></i> GameDistribution
+                    </a>
+                </div>
+                <p class="disclaimer">
+                    <i class="fas fa-exclamation-circle"></i> All games belong to their respective owners. This is an educational project.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-gamepad"></i> GameHub Pro
+                    </div>
+                    <p class="footer-tagline">Your Ultimate HTML5 Games Collection</p>
+                </div>
+                
+                <div class="footer-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-gamepad"></i>
+                        <div>
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Games</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Sources</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-layer-group"></i>
+                        <div>
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Embed Types</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <a href="#htmlgames" class="footer-link">
+                        <i class="fab fa-html5"></i> HTML5 Games
+                    </a>
+                    <a href="#onlinegames" class="footer-link">
+                        <i class="fas fa-globe"></i> Online Games
+                    </a>
+                    <a href="#about" class="footer-link">
+                        <i class="fas fa-info-circle"></i> About
+                    </a>
+                    <a href="https://github.com/riths0321/Game" target="_blank" class="footer-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+
+                <div class="footer-copyright">
+                    <p>© 2024 GameHub Pro - HTML5 Games Collection</p>
+                    <p class="student-project">Created as a personal educational project</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="Share">
+                            <i class="fas fa-share-alt"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Refresh">
+                            <i class="fas fa-redo-alt"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Fullscreen">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader">
+            <div class="loader-gamepad">
+                <i class="fas fa-gamepad"></i>
+            </div>
+            <p>Loading Games...</p>
+        </div>
+    </div>
+
+    <!-- Fullscreen Modal -->
+    <div class="fullscreen-modal" id="fullscreenModal">
+        <div class="modal-header">
+            <button class="close-modal" onclick="closeFullscreen()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 id="modalTitle">Game</h3>
+        </div>
+        <div class="modal-content" id="modalContent">
+            <!-- Game will load here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
